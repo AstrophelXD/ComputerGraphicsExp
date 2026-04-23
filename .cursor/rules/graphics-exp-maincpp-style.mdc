@@ -1,0 +1,30 @@
+---
+description: Style and structure for exp*/main.cpp
+globs: exp*/main.cpp
+alwaysApply: false
+---
+
+# exp*/main.cpp 结构与风格规则
+
+## 文件目标
+
+- `main.cpp` 仅承载当前实验核心实现，不写“通用框架大全”。
+- 优先保证“能跑 + 对题 + 精简”，再考虑扩展。
+
+## 推荐结构（MFC）
+
+- 使用 `CWinApp + CFrameWnd + CView` 最小结构。
+- OpenGL 上下文生命周期集中在 `CView`：`OnCreate/OnDestroy/OnSize`。
+- 绘制入口固定在 `OnDraw`，动画在 `OnTimer`。
+
+## 代码约束
+
+- 非题目要求的形体/材质/算法不要提前实现。
+- 删除未使用函数、常量、分支，保持单一职责。
+- 避免重复粘贴导致的“同名类型/函数重复定义”。
+- 注释只写“为什么”，不写显而易见的“做了什么”。
+
+## 提交前检查
+
+- 必须执行 `build_mfc.bat` 并确认生成 `expX/expX.exe`。
+- 若有 README，需同步说明“当前实验实现范围”和“运行方式”。

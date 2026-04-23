@@ -1,0 +1,68 @@
+# Build directories
+/build/
+/build-vs/
+**/[Dd]ebug/
+**/[Rr]elease/
+**/x64/
+**/x86/
+
+# Build outputs
+*.exe
+*.dll
+*.so
+*.dylib
+*.lib
+*.a
+*.obj
+*.o
+*.pdb
+*.idb
+*.ilk
+*.exp
+*.res
+*.manifest
+*.tlog
+*.lastbuildstate
+*.cache
+*.opendb
+*.sbr
+*.bsc
+*.pch
+
+# Visual Studio
+/.vs/
+*.VC.db
+*.VC.opendb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.ncb
+*.ipch
+*.aps
+*.psess
+*.vsp
+*.vspx
+
+# CMake / Ninja
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+build.ninja
+.ninja_deps
+.ninja_log
+
+# JetBrains
+.idea/
+
+# Misc
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# MFC-Refs
+/MFC-Refs/
